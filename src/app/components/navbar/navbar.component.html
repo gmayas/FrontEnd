@@ -12,7 +12,7 @@
     <!-- center -->
     <div class="mx-auto order-0">
       <div *ngIf="( auth.isAuthenticated() | async )" class="navbar-brand">
-        <a *ngIf="( user | async )" class="navbar-brand mx-auto"> Hola: {{ email }}</a>
+        <a *ngIf="( user | async )" class="navbar-brand mx-auto"> Hola: {{ user?.value?.email }}</a>
       </div>
     </div>
     <!-- Right -->
